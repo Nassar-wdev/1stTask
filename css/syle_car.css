@@ -1,0 +1,53 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 0;
+    
+}
+
+.page{
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 6% 1fr 4% 6% ;
+    grid-template-areas: "hd" "mn" "sn" "ft";
+}
+
+.color-h-f{
+    background-color: rgb(43 83 142);
+    color: white;
+    font-size: larger;
+    /*
+     class for color in header and footer
+     */
+}
+
+.txt-pos{
+    display: flex;
+    align-items: center;
+    padding-left: 1%;
+    /* 
+    class for text position
+    */
+}
+@media (max-width: 767px){
+    .page{
+        font-size: 10px;
+        letter-spacing: .4px;
+    }
+    /* mopile */
+}
+@media (min-width: 768px ) and (max-width: 991px){
+    .page{
+        font-size: 12px;
+    }
+    /* small screen */
+}
+@media (min-width: 1200px ){
+    .page{
+        font-size: 20px;
+    }
+    /* large screens */
+}
+
